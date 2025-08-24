@@ -17,9 +17,15 @@ from packages.harness import run_batch, write_csv, write_manifest
 from packages.solvers import create_solver, get_solver_ids
 
 # Importing solver modules registers them by side-effect in the solver registry.
-from packages.solvers import random_consistent  # noqa: F401 (registers)
-from packages.solvers import letter_freq  # noqa: F401 (registers)
-from packages.solvers import entropy  # noqa: F401 (registers)
+from packages.solvers import random_consistent   # noqa: F401
+from packages.solvers import letter_freq         # noqa: F401
+from packages.solvers import entropy             # noqa: F401
+from packages.solvers import positional_freq     # noqa: F401
+from packages.solvers import max_patterns        # noqa: F401
+from packages.solvers import expected_left       # noqa: F401
+from packages.solvers import entropy_weighted    # noqa: F401
+from packages.solvers import two_stage_probe     # noqa: F401
+from packages.solvers import two_ply_mc          # noqa: F401
 
 MAX_TURNS = 6  # Wordle hard limit (kept here to mirror harness constant)
 
